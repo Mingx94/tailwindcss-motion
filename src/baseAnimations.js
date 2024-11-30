@@ -1,5 +1,3 @@
-import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
-
 // animation strings
 export const scaleInAnimation =
   "motion-scale-in calc(var(--motion-scale-duration) * var(--motion-scale-perceptual-duration-multiplier)) var(--motion-scale-timing) var(--motion-scale-delay) both";
@@ -469,6 +467,6 @@ export const baseAnimationsTheme = {
   motionBlur: (theme) => theme("blur"),
   motionGrayscale: (theme) => theme("grayscale"),
   motionOpacity: (theme) => ({ ...theme("opacity"), DEFAULT: "0", 0: "0.001" }),
-  motionBackgroundColor: (theme) => flattenColorPalette(theme("colors")),
-  motionTextColor: (theme) => flattenColorPalette(theme("colors")),
+  motionBackgroundColor: (theme) => theme("colors"),
+  motionTextColor: (theme) => theme("colors"),
 };

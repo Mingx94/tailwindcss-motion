@@ -30,9 +30,9 @@
   ],
   "type": "module",
   "devDependencies": {
-    "tailwindcss": "^3.4.12"
+    "tailwindcss": "^4.0.0-beta.3"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3.0.0 || insiders"
+    "tailwindcss": ">=4.0.0-beta.3"
   }
 }
